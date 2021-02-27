@@ -38,6 +38,6 @@ None.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](LICENSE)
 
 Copyright (c) 2021 Shanen Cross
