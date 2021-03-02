@@ -35,7 +35,7 @@ To use the application:
 ## Tests
 
 ```
-Describe: Pizza()
+Describe: Pizza(size, toppings)
 Test: Should construct a pizza object, using the given arguments as values for size and toppings, and calculate resulting price in dollars
 Expect(new Pizza("extra-large", ["Pepperoni", "Anchovies", "Spinach"]).toEquals(Pizza {size: "extra-large", toppings: ["Pepperoni", "Anchovies", "Spinach"], price: 33.74 }))
 
@@ -58,6 +58,18 @@ Code:
 	let pizza = new Pizza("extra-large", ["Pepperoni", "Anchovies", "Spinach"]);
 Expect(pizza.calculatePrice()).toEquals(33.74);
 
+Describe: roundToFixedPoint(num, decimalPlace)
+Test 1: Should round a given number to a specified number of places after the decimal point.
+Expect(roundToFixedPoint(33.739999999999995, 2).toEquals(33.74));
+
+Test 2: Same as Test 1 description.
+Expect(roundToFixedPoint(22.185309, 3).toEquals(22.185));
+
+Test 3: Make sure the digits round up too.
+Expect(roundToFixedPoint(18.34256, 4).toEquals(18.3426));
+
+Test 4: Make sure multiple digits get rounded up.
+Expect(roundToFixedPoint(1.34569999, 7).toEquals(1.3457));
 ```
 
 ## Known Bugs
