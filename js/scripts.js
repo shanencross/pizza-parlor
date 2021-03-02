@@ -21,7 +21,7 @@ Pizza.prototype.calculatePrice = function() {
 
 	const basePrice = basePrices[this.size];
 	const toppingPrice = this.toppings.length * toppingPrices[this.size];
-	const price = (basePrice + toppingPrice).toFixed(2);
+	const price = roundToFixedPoint(basePrice + toppingPrice, 2);
 	return price;
 }
 
