@@ -6,3 +6,7 @@
 body {
 	background-color: rgb(155, 195, 245);
 }
+
+#order-confirmation {
+	display: none;
+}
