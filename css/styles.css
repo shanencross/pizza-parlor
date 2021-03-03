@@ -10,3 +10,10 @@ body {
 #order-confirmation {
 	display: none;
 }
+
+#pizza-picture {
+	width: 35%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
