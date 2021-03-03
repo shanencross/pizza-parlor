@@ -8,6 +8,42 @@
 	<title>Pizza Parlor</title>
 </head>
 <body>
+	<div class="jumbotron">
+		<h1>Michael's Pizza</h1>
+	</div>
+
+	<div class="container">
+		<div id="intro">
+			<p>Welcome to Michael's Pizza!</p>
+			<p>Here you can select what kind of pizza you'd like, and place your order.</p>
+			<p>Our pizza is super duper yummy, and we allow full topping customization to create the perfect pizza for <em>you</em>.</p>
+			<p>First you'll pick the size of your pizza, then add whatever toppings you'd like!</p>
+		</div>
+		<br>
+		<div id="order-placement">
+			<h2>Time to place your pizza order!</h2>
+			<form id="size-form">
+				<label for="pizza-size">What size would you like?</label>
+				<select class="form-control" id="pizza-size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+					<option value="extra-large">Extra-Large</option>
+				</select>
+			</form>
+
+			<form id="topping-form">
+				<div class="form-group">
+					<p>What toppings would you like?</p>
+					<input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+					<input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
+					<input type="checkbox" name="toppings" value="spinach">Spinach<br>
+					<input type="checkbox" name="toppings" value="olives">Olives<br>
+					<input type="checkbox" name="toppings" value="sausage">Sausage<br>
+				</div>
+			</form>
+		</div>
+	</div>
 
 </body>
 </html>
