@@ -18,6 +18,22 @@ A learning project created for the coding school Epicodus to practice constructo
 
 Website for a pizza parlor, where users can select the size and toppings for a pizza they wish to order. The website will then display the final cost of the pizza, depending on the options selected.
 
+The prices are calculated as follows:
+
+Base pizza prices:
+Small: $13.99
+Medium: $17.99
+Large: $20.99
+Extra-Large: $23.99
+
+Additional price added per topping:
+Small: $2.50
+Medium: $2.75
+Large: $3.00
+Extra-large: $3.25
+
+The base price and price for each topping are added to obtain the total price.
+
 ## Setup/Installation Requirements
 
 To use locally:
@@ -40,22 +56,8 @@ Test: Should construct a pizza object, using the given arguments as values for s
 Expect(new Pizza("extra-large", ["Pepperoni", "Anchovies", "Spinach"]).toEquals(Pizza {size: "extra-large", toppings: ["Pepperoni", "Anchovies", "Spinach"], price: 33.74 }))
 
 Describe: Pizza.prototype.calculatePrice()
-Test: Should calculate and return price of pizza using size and toppings properties, according to this formula:
-
-Base prices:
-Small: $13.99
-Medium: $17.99
-Large: $20.99
-Extra-large: $23.99
-
-Prices per topping:
-Small: $2.50
-Medium: $2.75
-Large: $3.00
-Extra-large: $3.25
-
-Code: 
-	let pizza = new Pizza("extra-large", ["Pepperoni", "Anchovies", "Spinach"]);
+Test: Should calculate and return price of pizza using size and toppings properties, according to the prices listed in the description.
+Code: let pizza = new Pizza("extra-large", ["Pepperoni", "Anchovies", "Spinach"]);
 Expect(pizza.calculatePrice()).toEquals(33.74);
 
 Describe: roundToFixedPoint(num, decimalPlace)
