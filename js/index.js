@@ -20,7 +20,6 @@ $(document).ready(function() {
 	$("button#new-order").click(function(event) {
 		$("#order-placement").show();
 		$("#order-confirmation").hide();
-
 		$("form#order-form")[0].reset();
 	})
 })
