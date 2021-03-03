@@ -16,7 +16,7 @@
 
 A learning project created for the coding school Epicodus to practice constructors and prototypes.
 
-Website for a pizza parlor, where users can select the size and toppings for a pizza they wish to order. The website will then display the final cost of the pizza, depending on the options selected.
+Website for a pizza parlor, where the user can select the size and toppings for a pizza they wish to order. The website will then display the final cost of the pizza, depending on the options selected.
 
 The prices are calculated as follows:
 
