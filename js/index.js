@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("form#order-form").submit(function(event) {
+	$("#order-form").submit(function(event) {
 		event.preventDefault();
 
 		const size = $("#order-form #pizza-size").val();
@@ -20,6 +20,6 @@ $(document).ready(function() {
 	$("button#new-order").click(function(event) {
 		$("#order-placement").show();
 		$("#order-confirmation").hide();
-		$("form#order-form")[0].reset();
+		$("#order-form")[0].reset();
 	})
 })
